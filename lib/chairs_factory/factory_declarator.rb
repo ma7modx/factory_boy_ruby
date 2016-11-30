@@ -10,7 +10,7 @@ module FactoryDeclarator
 
   def factory(factory_name, hash = {}, &block)
     class_name = hash[:class] || factory_name.to_s.capitalize
-    @@factories[factory_name] = FactoryBoy::Factory.new(class_name, factory_name)
+    @@factories[factory_name] = ChairsFactory::Factory.new(class_name, factory_name)
     @@factories[factory_name].instance_eval(&block) if block
   end
 
@@ -24,7 +24,7 @@ module FactoryDeclarator
       function_output
     end
 
-    factory_instance = FactoryBoy::FactoryInstance.new( factory_name, Hash[initialize_parameters.zip(args)] )
+    factory_instance = ChairsFactory::FactoryInstance.new( factory_name, Hash[initialize_parameters.zip(args)] )
 
     callback(factory_name, :build, factory_instance) do 
       factory_instance.activate_object

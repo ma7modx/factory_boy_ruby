@@ -1,6 +1,6 @@
 require_relative 'factory_customizer'
 
-module FactoryBoy
+module ChairsFactory
   class Factory
     include FactoryCustomizer
 
