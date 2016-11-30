@@ -8,11 +8,11 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Mahmoud Afify"]
-  s.date = "2016-11-28"
+  s.date = "2016-11-30"
   s.description = "Generate testing instances for the non-model classes\t"
   s.email = "ma7modx@gmail.com"
   s.extra_rdoc_files = ["README.rdoc", "lib/factory_boy/factory.rb", "lib/factory_boy/factory_boy.rb", "lib/factory_boy/factory_callbacks.rb", "lib/factory_boy/factory_customizer.rb", "lib/factory_boy/factory_declarator.rb", "lib/factory_boy/factory_instance.rb"]
-  s.files = ["Manifest", "README.rdoc", "Rakefile", "factory_boy.gemspec", "lib/factory_boy/factory.rb", "lib/factory_boy/factory_boy.rb", "lib/factory_boy/factory_callbacks.rb", "lib/factory_boy/factory_customizer.rb", "lib/factory_boy/factory_declarator.rb", "lib/factory_boy/factory_instance.rb"]
+  s.files = ["Manifest", "README.rdoc", "Rakefile", "factory_boy.gemspec", "init.rb", "lib/factory_boy/factory.rb", "lib/factory_boy/factory_boy.rb", "lib/factory_boy/factory_callbacks.rb", "lib/factory_boy/factory_customizer.rb", "lib/factory_boy/factory_declarator.rb", "lib/factory_boy/factory_instance.rb"]
   s.homepage = "http://github.com/ma7modx/factory_boy"
   s.rdoc_options = ["--line-numbers", "--title", "Factory_boy", "--main", "README.rdoc"]
   s.rubyforge_project = "factory_boy"

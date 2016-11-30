@@ -1,0 +1,6 @@
+require 'factory_boy/factory_boy.rb'
+require 'factory_boy/factory_callbacks.rb'
+require 'factory_boy/factory_customizer.rb'
+require 'factory_boy/factory_declarator.rb'
+require 'factory_boy/factory_instance.rb'
+require 'factory_boy/factory.rb'
