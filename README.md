@@ -32,8 +32,8 @@ or loading it in the factory_girl initializer will work as well
 FactoryGirl.definition_file_paths.push(Pathname.new (File.join(Rails.root, 'spec/factory_boy')))
 ```
 
-## Usage
-this is a sample factory for class Registration
+## Sample
+sample factory for class Registration
 ```
 class Registration
   def initialize(name, email, password, country) ;
