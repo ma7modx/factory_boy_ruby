@@ -44,7 +44,7 @@ FactoryBoy.define do
   factory :registration, class: Registration do
     name { "toto" }
     email { Faker::Internet.email }
-    password {  Token.generate() }
+    password {  Faker::Internet.password }
     factory_girl :country
 
     before(:build) do
