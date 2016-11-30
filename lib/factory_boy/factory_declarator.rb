@@ -24,7 +24,7 @@ module FactoryDeclarator
       function_output
     end
 
-    factory_instance = ChairsFactory::FactoryInstance.new( factory_name, Hash[initialize_parameters.zip(args)] )
+    factory_instance = FactoryBoy::FactoryInstance.new( factory_name, Hash[initialize_parameters.zip(args)] )
 
     callback(factory_name, :build, factory_instance) do 
       factory_instance.activate_object

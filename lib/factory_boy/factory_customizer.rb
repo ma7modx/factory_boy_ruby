@@ -1,4 +1,4 @@
-require_relative '../chairs_factory'
+require_relative '../factory_boy'
 
 module FactoryCustomizer
   def set_method(name, options = {}, &method_return_block)
@@ -22,7 +22,7 @@ module FactoryCustomizer
 
   def register_callback(execution_precedence, *on_calls, &block)
     on_calls.each do |on_call|
-      ChairsFactory.register_callback(self.factory_name, execution_precedence, on_call, &block)
+      FactoryBoy.register_callback(self.factory_name, execution_precedence, on_call, &block)
     end
   end
 

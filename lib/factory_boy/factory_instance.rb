@@ -1,6 +1,6 @@
-require_relative '../chairs_factory'
+require_relative '../factory_boy'
 
-module ChairsFactory
+module FactoryBoy
   class FactoryInstance
     attr_reader :factory_name, :object_inputs, :linked_object
 
