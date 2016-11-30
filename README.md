@@ -13,19 +13,18 @@ gem install factory_boy_ruby
 ```
 
 ## Getting started
-first you need to require it preferrely requiring it in the spec_helper
+first you need to require it preferred doing this in the spec_helper
 ```
 # spec/spec_helper.rb
 require 'factory_boy'
 ```
-and make a folder to put your factory code in for eg. spec/factory_boy/factories, if you're using factory_girl load these factories
-after factory_girl factories to be able to use them.
+and make a folder to put your factory code in eg. spec/factory_boy/factories, if you're using factory_girl load these factories after factory_girl factories to be able to use them.
 you can add these lines in the spec_helper to be able to load them
 ```
 # spec/spec_helper.rb
 Dir['./spec/factory_boy/factories/**/*.rb'].each { |f| require f }
 ```
-or loading it in the factory_girl initializer will work as well
+or loading it in the factory_girl initializer will work too as well
 
 ```
 # initializer/factory_girl.rb
