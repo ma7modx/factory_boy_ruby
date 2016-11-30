@@ -1,8 +1,7 @@
 Manifest
 README.rdoc
 Rakefile
-chairs_factory-ruby.gemspec
-chairs_factory.gemspec
+factory_boy_ruby.gemspec
 init.rb
 lib/factory_boy.rb
 lib/factory_boy/factory.rb
