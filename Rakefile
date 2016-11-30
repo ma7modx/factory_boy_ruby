@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('factory_boy', '0.1.0') do |p|
+Echoe.new('factory_boy_ruby', '0.1.0') do |p|
   p.description    = "Generate testing instances for the non-model classes	"
   p.url            = "http://github.com/ma7modx/factory_boy"
   p.author         = "Mahmoud Afify"
