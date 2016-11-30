@@ -37,7 +37,6 @@ sample factory for class Registration
 ```
 class Registration
   def initialize(name, email, password, country) ;
-  def signup() ;
 end
 ```
 ```
