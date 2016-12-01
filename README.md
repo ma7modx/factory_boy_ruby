@@ -54,3 +54,7 @@ FactoryBoy.define do
   end
 end
 ```
+
+```ruby
+FactoryBoy.build(:vehicles_retriever)
+```
