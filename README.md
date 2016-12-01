@@ -54,7 +54,7 @@ FactoryBoy.define do
   end
 end
 ```
-To generate instance form this factory:
+To generate an instance form this factory:
 ```ruby
 FactoryBoy.build(:vehicles_retriever)
 ```
