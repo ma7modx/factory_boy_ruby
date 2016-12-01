@@ -4,51 +4,50 @@ Generate testing instances for non-model classes
 ## Installation 
 
 add the following in the gemfile 
-```
+```ruby
 gem 'factory_boy_ruby'
 ```
 or download it manually through the shell
-```
+```bash
 gem install factory_boy_ruby
 ```
 
 ## Getting started
 first you need to require it preferred doing this in the spec_helper
-```
+```ruby
 # spec/spec_helper.rb
 require 'factory_boy'
 ```
 and make a folder to put your factory code in eg. spec/factory_boy/factories, if you're using factory_girl load these factories after factory_girl factories to be able to use them.
 you can add these lines in the spec_helper to be able to load them
-```
+```ruby
 # spec/spec_helper.rb
 Dir['./spec/factory_boy/factories/**/*.rb'].each { |f| require f }
 ```
 or loading it in the factory_girl initializer will work too as well
 
-```
+```ruby
 # initializer/factory_girl.rb
 FactoryGirl.definition_file_paths.push(Pathname.new (File.join(Rails.root, 'spec/factory_boy')))
 ```
 
 ## Sample
-sample factory for class Registration
-```
-class Registration
-  def initialize(name, email, password, country) ;
+sample factory for class VehilcesRetriever
+```ruby
+class VehilcesRetriever
+  def initialize(provider_company, country, city, vehicle_type) ;
 end
 ```
-```
-# factory_boy/factories/registration_factory.rb
+```ruby
+# factory_boy/factories/vehicles_retriever.rb
 FactoryBoy.define do
-  factory :registration, class: Registration do
-    name { "toto" }
-    email { Faker::Internet.email }
-    password {  Faker::Internet.password }
+  factory :vehicles_retriever, class: VehilcesRetriever do
+    factory_girl :provider_company, factory: :company, create: true
     factory_girl :country
+    vehicle_type { VehicleTypes.all.sample }
 
     before(:build) do
-      FactoryGirl.create(:user, name: self.name ,email: self.email, password: self.password, country_id: self.country.id)
+      FactoryGirl.create(:vehicle, provider_company: self.provider_company ,country: self.country, vehicle_type: self.vehicle_type)
     end
   end
 end
