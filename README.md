@@ -3,17 +3,19 @@ Generate testing instances for non-model classes
 
 ## Installation 
 
-add the following in the gemfile 
+Add the following in the gemfile 
 ```ruby
 gem 'factory_boy_ruby'
 ```
-or download it manually through the shell
+and run ``` bundle install ```
+
+Or install it manually from the shell
 ```bash
 gem install factory_boy_ruby
 ```
 
 ## Getting started
-first you need to require it preferred doing this in the spec_helper
+First you need to require it, preferred doing this in the spec_helper
 ```ruby
 # spec/spec_helper.rb
 require 'factory_boy'
