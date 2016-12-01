@@ -34,7 +34,7 @@ FactoryGirl.definition_file_paths.push(Pathname.new (File.join(Rails.root, 'spec
 ```
 
 ## Sample
-sample factory for class VehilcesRetriever
+Sample factory for class VehilcesRetriever
 ```ruby
 class VehilcesRetriever
   def initialize(provider_company, country, city, vehicle_type) ;
@@ -54,7 +54,7 @@ FactoryBoy.define do
   end
 end
 ```
-to generate instance form this factory
+To generate instance form this factory:
 ```ruby
 FactoryBoy.build(:vehicles_retriever)
 ```
