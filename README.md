@@ -24,7 +24,7 @@ you can add these lines in the spec_helper to be able to load them
 # spec/spec_helper.rb
 Dir['./spec/factory_boy/factories/**/*.rb'].each { |f| require f }
 ```
-or loading it in the factory_girl initializer will work too as well
+or loading it in the factory_girl initializer would work as well
 
 ```ruby
 # initializer/factory_girl.rb
