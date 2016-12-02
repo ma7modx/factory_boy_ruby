@@ -1,5 +1,5 @@
 # factory_boy_ruby
-Generate testing instances for non-model classes, like the business layer classes.
+Allows you to create factories for non-model classes like the business layer ones, to be able to generate testing instances from these classes for easy and DRY test writing.
 
 ## Installation 
 
