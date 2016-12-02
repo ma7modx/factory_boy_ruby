@@ -1,15 +1,15 @@
 # factory_boy_ruby
-Generate testing instances for non-model classes
+Generate testing instances for non-model classes, like the business layer classes.
 
 ## Installation 
 
-Add the following in the gemfile 
+Add the following in the gemfile:
 ```ruby
 gem 'factory_boy_ruby'
 ```
 and run ``` bundle install ```
 
-Or install it manually from the shell
+Or install it manually from the shell:
 ```bash
 gem install factory_boy_ruby
 ```
