@@ -19,8 +19,7 @@ module FactoryDeclarator
     klass = factory.linked_class
     initialize_parameters = klass.instance_method(:initialize).parameters.map(&:last)
     args = initialize_parameters.map do |param|
-      function_output = options[param]
-      function_output ||= factory.send(param) # may have problems optional params
+      function_output = options.key?(param) ? options[param] : factory.send(param) # may have problems optional params
       function_output
     end
 
