@@ -1,5 +1,5 @@
 # factory_boy_ruby
-Allows you to create factories for non-model classes like the business layer ones, to be able to generate testing instances from these classes for easy and DRY test writing.
+Allows you to create factories for the model component for the non-active record classes like the business logic layer ones, to be able to generate testing instances from these classes for easy and DRY test writing.
 
 ## Installation 
 
